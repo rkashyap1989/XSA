@@ -1,0 +1,4 @@
+column table employee
+( ID int,
+	name varchar(30)
+)

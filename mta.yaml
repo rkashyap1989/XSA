@@ -1,0 +1,16 @@
+ID: xsa
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: hana_db
+   type: hdb
+   path: hana_db
+   requires:
+    - name: hdi_hana_db
+
+resources:
+ - name: hdi_hana_db
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
